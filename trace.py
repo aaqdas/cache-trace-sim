@@ -18,9 +18,9 @@ def main():
 
     with open(input_file, 'r') as fin, open(output_file, 'w') as fout:
         # Write header line
-        fout.write(
-            "Uop\tPC\tSrc1\tSrc2\tDest\tFlags\tBranch\tLd/St\tImmediate\tMem. Address\tFallthrough PC\tTarget PC\tMacro Opcode\tMicro Opcode\n"
-        )
+        # fout.write(
+        #     "Uop\tPC\tSrc1\tSrc2\tDest\tFlags\tBranch\tLd/St\tImmediate\tMem. Address\tFallthrough PC\tTarget PC\tMacro Opcode\tMicro Opcode\n"
+        # )
 
         for line in fin:
             line = line.strip()

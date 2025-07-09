@@ -41,7 +41,7 @@ git submodule update --init --recursive
 ### 1. Build the executable
 
 ```bash
-make build
+make build APP=<app-name>
 ```
 
 This compiles `memtrace.c` into `memtrace.out` with default `-O0` flags.
@@ -51,7 +51,7 @@ This compiles `memtrace.c` into `memtrace.out` with default `-O0` flags.
 ### 2. Generate the memory trace
 
 ```bash
-make trace
+make trace APP=<app-name>
 ```
 
 Runs Valgrind Lackey on the executable and converts the trace.
@@ -61,7 +61,7 @@ Runs Valgrind Lackey on the executable and converts the trace.
 ### 3. Run the cache simulator
 
 ```bash
-make run
+make run APP=<app-name>
 ```
 
 Runs the Python 2 cache simulator on the formatted trace.
